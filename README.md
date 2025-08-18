@@ -99,7 +99,7 @@ print(f"Validation IoU: {results['iou']:.4f}")
 
 ### Core Concept
 
-The model approximates convex polygons using the mathematical principle:
+The model approximates convex polygons using the mathematical principle: 
 
 $$\text{polygon\_interior} = \prod_i \text{ReLU}(w_{i1} x + w_{i2} y + b_i)$$
 
