@@ -2,7 +2,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)](https://tensorflow.org/)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE.md)
 
 _A geometric approach to binary shape classification with custom activation functions and polygon boundary approximation._
 
