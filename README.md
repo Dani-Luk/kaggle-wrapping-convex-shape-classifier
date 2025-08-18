@@ -103,6 +103,8 @@ The model approximates convex polygons using the mathematical principle:
 
 $$\text{polygon\_interior} = \prod_i \text{ReLU}(w_{i1} x + w_{i2} y + b_i)$$
 
+$$\mathrm{polygon\_interior} = \prod_i \mathrm{ReLU}(w_{i1} x + w_{i2} y + b_i)$$
+
 Where:
 - Each ReLU neuron represents a **half-plane constraint**: $\text{ReLU}(w_1 x + w_2 y + b) = \max(0, w_1 x + w_2 y + b)$
 - **Multiplication implements AND logic**: All constraints must be satisfied simultaneously
