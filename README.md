@@ -4,7 +4,8 @@
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)](https://tensorflow.org/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-A geometric approach to binary shape classification using neural networks with **custom activation functions** and **geometric constraints**. This project explores polygon boundary approximation using ReLU neurons combined with logical AND operations through multiplication.
+_A geometric approach to binary shape classification with custom activation functions and polygon boundary approximation._
+
 
 ## 🎯 Overview
 
@@ -130,17 +131,17 @@ Input(2D) → Dense(n_sides, ReLU) → Custom_Activation → Dense(1, Sigmoid) �
 
 1. **Phase 1**: Train output layer only (frozen polygon layer)
 2. **Phase 2**: Train all layers with geometric initialization
-3. **Evaluation**: IoU-based performance measurement
+3. **Evaluation**: IoU-based performance measurement (Intersection over Union)
 
 ## 📊 Performance Analysis
 
-### IoU Results Summary
+### IoU(Intersection over Union) Results Summary
 
 | Shape Type | Avg IoU | Performance |
 |------------|---------|-------------|
 | Convex Shapes | >0.95 | Excellent |
-| Simple Polygons | >0.90 | Very Good |
-| Non-Convex Shapes | ~0.75 | Limited* |
+| Simple Polygons | >0.80 | Good |
+| Non-Convex Shapes | ~0.5 | Limited* |
 
 *Limited performance on non-convex shapes is expected due to mathematical constraints
 
@@ -161,27 +162,25 @@ Input(2D) → Dense(n_sides, ReLU) → Custom_Activation → Dense(1, Sigmoid) �
 - **n_samples**: Training data size (default: 3000)
 - **activation_fn**: Choice between multiplication variants
 
-## 📝 Research Contributions
+## 📝 Project Highlights
 
-1. **Novel Activation Function**: Multiply-all operation as logical AND
-2. **Geometric Initialization**: Circle-based weight initialization strategy  
-3. **Comprehensive Evaluation**: IoU-based metrics for shape-specific performance
-4. **Interpretable Architecture**: Clear geometric meaning for each component
+- Custom activation function based on a multiply-all (logical AND) operation  
+- Circle-based weight initialization strategy  
+- IoU-based evaluation for shape-specific performance  
+- Geometry-inspired architecture for interpretability  
 
 ## 🔮 Future Work
 
-- **3D Extension**: Convex polyhedra classification in 3D space
-- **Dynamic Neuron Allocation**: Data-driven polygon refinement
-- **Hybrid Approaches**: Combining with traditional deep learning for non-convex shapes
-- **Real-world Applications**: Object detection, image segmentation
+- Extending to 3D shapes and higher-dimensional convex sets  
+- Dynamic neuron allocation for misclassified regions  
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to:
-- Submit bug reports and feature requests
-- Improve documentation
-- Add new shape types or experiments
-- Optimize the training process
+Contributions are welcome:
+- Bug reports and feature requests  
+- Documentation improvements  
+- New shape types or experiments  
+- Training optimizations  
 
 ## 📄 License
 
@@ -190,17 +189,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🙏 Acknowledgments
 
 - Inspired by geometric deep learning principles
-- TensorFlow team for excellent custom gradient support
+- TensorFlow team for custom gradient support
 - Matplotlib for visualization capabilities
 
-## 📚 References
-
-- Geometric Deep Learning literature
-- Convex optimization theory
-- Neural network interpretability research
-
 ---
+_If you find this project useful, feedback and contributions are welcome._
 
-**⭐ If you find this project interesting, please consider giving it a star!**
-
-For questions or collaboration opportunities, feel free to reach out through GitHub issues.
