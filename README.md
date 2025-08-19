@@ -1,4 +1,4 @@
-# Neural Network-Based Convex Shape Classification
+# Wrapping the Boundary: Neural Network Shape Classification
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)](https://tensorflow.org/)
