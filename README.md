@@ -15,6 +15,20 @@ This project demonstrates how to approximate convex polygons using neural networ
 - **Geometric weight initialization** speeds up convergence
 - **IoU (Intersection over Union)** provides accurate shape-specific performance metrics
 
+---
+
+## 🚀 Update: Incremental Sequential Extension for Non-convex Shapes
+
+A new notebook, **`incremental_sequential_shape_classifier.ipynb`**, extends this work to
+**non-convex shape classification** using an incremental **PolygonBlock** architecture.
+
+Each block adds or subtracts geometric regions (via α coefficients) to refine the decision
+boundary — effectively "building" complex shapes step by step.
+
+👉 [View the new notebook](incremental_sequential_shape_classifier.ipynb)
+
+---
+
 ### Key Features
 
 - 🔧 **Custom Activation Functions**: Implement AND logic through multiplication operations
