@@ -206,7 +206,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) f
 ---
 ## 🔗 See also
 
-👉 *Next*: [Non-convex Shape Classification with Soft Ellipse RBFs](https://github.com/Dani-Luk/kaggle-soft-ellipse-rbf) 
+👉 *Next*: [Non-convex Shape Classification with Soft Ellipse RBFs](https://github.com/Dani-Luk/kaggle-soft-ellipse-rbf)  
+👉 *Next*: [Non-convex Shape Classification using an incremental **PolygonBlock** architecture ](incremental_sequential_shape_classifier.ipynb) 
 
 👈 *Previous*: [A kind of “study” of the XOR problem](https://github.com/Dani-Luk/ChatGPT?tab=readme-ov-file#21-nn-xor-solved-by-2-crossing-layers-2-x-1-perceptron----1st-layer-trained-first)
 
