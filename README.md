@@ -6,7 +6,6 @@
 
 _A geometric approach to binary shape classification with custom activation functions and polygon boundary approximation._
 
-
 ## 🎯 Overview
 
 This project demonstrates how to approximate convex polygons using neural networks where:
@@ -17,7 +16,7 @@ This project demonstrates how to approximate convex polygons using neural networ
 
 ---
 
-## 🚀 Update: Incremental Sequential Extension for Non-convex Shapes
+## 🚀 Update 1: Incremental Sequential Extension for Non-convex Shapes
 
 A new notebook, **`incremental_sequential_shape_classifier.ipynb`**, extends this work to
 **non-convex shape classification** using an incremental **PolygonBlock** architecture.
@@ -25,7 +24,18 @@ A new notebook, **`incremental_sequential_shape_classifier.ipynb`**, extends thi
 Each block adds or subtracts geometric regions (via α coefficients) to refine the decision
 boundary — effectively "building" complex shapes step by step.
 
-👉 [View the new notebook](incremental_sequential_shape_classifier.ipynb)
+👉 [View the new notebook](incremental_sequential_shape_classifier.ipynb) 
+
+---
+
+## 🚀 Update 2: Incremental _Parallel_ Extension for Non-convex Shapes
+
+A new notebook, **`incremental_sequential_shape_classifier.ipynb`**, extends this work to
+**non-convex shape classification** using a parallel incremental **PolygonBlock** architecture.
+
+Unlike the sequential model that adds blocks incrementally, the parallel polygon block architecture merges all geometric regions simultaneously via a shared ```Dense(1, use_bias=False)``` output layer.
+
+👉 [View the new notebook](incremental_parallel_shape_classifier.ipynb)
 
 ---
 
@@ -207,7 +217,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) f
 ## 🔗 See also
 
 👉 *Next*: [Non-convex Shape Classification with Soft Ellipse RBFs](https://github.com/Dani-Luk/kaggle-soft-ellipse-rbf)  
-👉 *Next*: [Non-convex Shape Classification using an incremental **PolygonBlock** architecture ](incremental_sequential_shape_classifier.ipynb) 
+👉 *Next*: [Non-convex Shape Classification using an incremental **sequential** **PolygonBlock** architecture ](incremental_sequential_shape_classifier.ipynb)  
+👉 *Next*: [Non-convex Shape Classification using an incremental **parallel PolygonBlock** architecture ](incremental_parallel_shape_classifier.ipynb) 
 
 👈 *Previous*: [A kind of “study” of the XOR problem](https://github.com/Dani-Luk/ChatGPT?tab=readme-ov-file#21-nn-xor-solved-by-2-crossing-layers-2-x-1-perceptron----1st-layer-trained-first)
 
